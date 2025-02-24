@@ -1,0 +1,147 @@
+
+.synthesis-input-main-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    position: relative;
+}
+
+
+.speech-mic-btn {
+    background-color: #ff4d4d;
+    border: none;
+    border-radius: 50%;
+    padding: 80px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.speech-mic-btn:hover {
+    background-color: #ff3333;
+    transform: scale(1.1);
+}
+
+
+.speech-input-container {
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgb(220, 215, 215);
+    box-shadow: 0 4px 6px rgb(243, 241, 241);
+    margin-top: auto; 
+}
+
+
+.speech-input {
+    flex: 1;
+    background-color: rgb(220, 215, 215);
+    border: none;
+    border-radius: 10px;
+    padding: 12px 15px;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    height: 125px; 
+    max-height: 125px; 
+    overflow-y: auto; 
+    resize: none; 
+}
+
+
+.speech-input::-webkit-scrollbar {
+    width: 11px;
+}
+
+.speech-input::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 5px;
+}
+
+.speech-input::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+
+.speech-input::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+
+
+.speech-input::-webkit-scrollbar-button:single-button {
+    background: #ccc;
+    display: block;
+    height: 15px;
+    width: 8px;
+    cursor: pointer;
+}
+
+
+.speech-input::-webkit-scrollbar-button:single-button:decrement {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23666" d="M12 8l-6 6h12z"/></svg>') center no-repeat;
+    background-size: 20px;
+}
+
+
+.speech-input::-webkit-scrollbar-button:single-button:increment {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23666" d="M12 16l6-6H6z"/></svg>') center no-repeat;
+    background-size: 20px;
+}
+
+@media (max-width: 1024px) {
+    .synthesisMain-container {
+        width: 70%;
+        height: 70vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .synthesisMain-container {
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 10px;
+    }
+
+    .speech-input-container {
+        padding: 8px;
+        border-radius: 20px;
+    }
+
+    .speech-input {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .speech-mic-btn {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .speech-input-container {
+        padding: 6px;
+        border-radius: 15px;
+    }
+
+    .speech-input {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .speech-mic-btn {
+        padding: 12px;
+    }
+}
