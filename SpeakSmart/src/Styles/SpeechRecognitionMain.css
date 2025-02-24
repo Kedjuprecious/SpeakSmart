@@ -1,0 +1,28 @@
+.recognitionMain-container {
+    width: 50%;
+    height: 65vh;
+    margin: 10vh auto;
+    border: 2px solid #1E90FF;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+@media (max-width: 768px) {
+    .recognitionMain-container {
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 10px;
+    }
+}

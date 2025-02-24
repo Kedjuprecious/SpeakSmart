@@ -1,9 +1,10 @@
 import React from 'react'; 
+import '../../Styles/SpeechRecognitionMain.css'
 
 
 const SynthesisPage = () => {
   return (
-    <div>
+    <div className='recognitionMain-container'>
       
     </div>
   );
