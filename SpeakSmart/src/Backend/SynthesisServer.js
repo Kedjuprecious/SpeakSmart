@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 
 // Speech SDK Configuration
-const subscriptionKey = 'BsNUlZ8cElpruLAATCfj1ViP9X77hj90ilc6PX6B9FqxnNbfGuLjJQQJ99ALACYeBjFXJ3w3AAAEACOG5cyb';
+const subscriptionKey = '8GLplNbJMwXhQP7YAPAC8mp7J7BdDRAIq7ygc2paDsRoaYz6CSk2JQQJ99BBACYeBjFXJ3w3AAABACOGDIhQ';
 const serviceRegion = 'eastus';
 
 console.log("Speech Subscription Key:", subscriptionKey ? "Loaded" : "Not Found");
