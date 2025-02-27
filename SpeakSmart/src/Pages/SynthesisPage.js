@@ -5,7 +5,7 @@ import '../Styles/SynthesisPage.css';
 
 const SynthesisPage = () => {
   return (
-    <div className='synthesis-container'>
+    <div className='synthesispage-container'>
       <PageHeader title="Speech Synthesis" bgColor="#32CD32" />
       <SpeechSynthesisMain />
     </div>
